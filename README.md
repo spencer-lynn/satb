@@ -5,6 +5,7 @@ A Matlab toolbox for behavioral experiments (e.g., in Psychology, Behavioral Eco
 The toolbox makes use of elements of Psychtoolbox.
 
 For a conceputal overview and applications, see:
+
 Lynn, S.K, and L.F. Barrett. 2014. “Utilizing” signal detection theory. Psychological Science, 25(9):1663–1673. DOI: 10.1177/0956797614541991.
 
 <http://nuweb4.neu.edu/spencerlynn/utilizing-signal-detection-theory/>
