@@ -1,0 +1,164 @@
+
+ans = 
+
+    'satb_stimdur_test'    '20120731T170608'    [1x37 char]
+
+Press "/?" for TARGET/S+ and "z" for FOIL/S- responses
+
+conditions = 
+
+        study: 'satb_stimdur_test'
+    ttlPoints: 0
+     scenario: 'test'
+      stimset: 'test_faces1'
+
+
+
+PTB-INFO: This is Psychtoolbox-3 for Apple OS X, under Matlab (Version 3.0.9 - Build date: May 21 2012).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Broken Apple OS/X 10.7 or later detected: Using CoreVideo timestamping instead of precise vbl-irq timestamping.
+PTB-INFO: Implausible measured vblank endline 1050 indicates that the beamposition query workaround should be used for your GPU.
+PTB-INFO: Enabling the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: NVIDIA GeForce GT 330M OpenGL Engine :: 2.1 NVIDIA-8.0.51
+PTB-INFO: Renderer has 512 MB of VRAM and a maximum 477 MB of texture memory.
+PTB-INFO: VBL startline = 1050 , VBL Endline = 1050
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.699169 ms [59.883219 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.677525 ms [59.960934 Hz]. (54 valid samples taken, stddev=0.199066 ms.)
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Support for fast OffscreenWindows enabled.
+
+ans = 
+
+          Line_Number: {'1'}
+             Stimulus: {'get_signal'}
+        Response_Code: {'NaN'}
+        Stimulus_Type: {'xfn'}
+    Stimulus_Duration: 0.5000
+                 wptr: 10
+
+
+ans = 
+
+       distnTarget: 'normal'
+                 h: 10
+                 m: -3
+         distnFoil: 'normal'
+                 a: -7
+                 j: 10
+                D0: 0
+          baserate: 0.5000
+          muTarget: 7
+         varTarget: 1.5000
+            muFoil: 5
+           varFoil: 1.5000
+    x_range_target: [1 2 3 4 5 6 7 8 9 10 11]
+      x_range_foil: [1 2 3 4 5 6 7 8 9 10 11]
+
+{Warning: FOR loop index is too large. Truncating to 2147483647.} 
+> In <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/satb_stimdur_test.m',231,1)">satb_stimdur_test>block_trials at 231</a>
+  In <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/satb_stimdur_test.m',196,1)">satb_stimdur_test>signalsTask at 196</a>
+  In <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/satb_stimdur_test.m',145,1)">satb_stimdur_test at 145</a>
+
+load_toc =
+
+    0.0140
+
+Elapsed time is 0.522443 seconds.
+
+load_toc =
+
+    0.0153
+
+Elapsed time is 0.513981 seconds.
+
+load_toc =
+
+    0.0153
+
+Elapsed time is 0.514308 seconds.
+
+load_toc =
+
+    0.0145
+
+Elapsed time is 0.515742 seconds.
+
+load_toc =
+
+    0.0145
+
+Elapsed time is 0.516919 seconds.
+
+load_toc =
+
+    0.0146
+
+Elapsed time is 0.516155 seconds.
+
+load_toc =
+
+    0.0146
+
+Elapsed time is 0.515269 seconds.
+
+load_toc =
+
+    0.0144
+
+Elapsed time is 0.515524 seconds.
+
+load_toc =
+
+    0.0145
+
+Elapsed time is 0.515147 seconds.
+
+load_toc =
+
+    0.0147
+
+Elapsed time is 0.516260 seconds.
+
+load_toc =
+
+    0.0141
+
+Elapsed time is 0.517088 seconds.
+{??? Operation terminated by user during ==> <a href="matlab: opentoline('/Applications/Psychtoolbox/PsychBasic/KbWait.m',148,0)">KbWait at 148</a>
+
+In ==> <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/satb_stimdur_test.m',249,0)">satb_stimdur_test>block_trials at 249</a>
+        KbWait([], 1); %wait for no key presses
+
+In ==> <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/satb_stimdur_test.m',196,0)">satb_stimdur_test>signalsTask at 196</a>
+block_trials('trials_list.txt','keys_yesno_list.txt',reps,trialinfo) %will repeat trial list reps
+#times.
+
+In ==> <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/satb_stimdur_test.m',145,0)">satb_stimdur_test at 145</a>
+    signalsTask(conditions.scenario,tReps,conditions.stimset,trialinfo)
+} 
+ 
+cleanup
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 2 times out of a total of 24 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+

@@ -1,0 +1,94 @@
+
+ans = 
+
+    'stimdur_test'    '25-Jul-2012 16:12:26'    [1x37 char]
+
+Press "z" for TARGET/S+ and "/?" for FOIL/S- responses
+
+conditions = 
+
+        study: 'stimdur_test'
+    ttlPoints: 0
+     scenario: 'test'
+      stimset: 'test_faces1'
+
+
+
+PTB-INFO: This is Psychtoolbox-3 for Apple OS X, under Matlab (Version 3.0.9 - Build date: May 21 2012).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Broken Apple OS/X 10.7 or later detected: Using CoreVideo timestamping instead of precise vbl-irq timestamping.
+
+------------------------------------------------------------------------
+       Segmentation violation detected at Wed Jul 25 16:12:26 2012
+------------------------------------------------------------------------
+
+Configuration:
+  MATLAB Version:   7.10.0.499 (R2010a)
+  MATLAB License:   294223
+  Operating System: Darwin 11.4.0 Darwin Kernel Version 11.4.0: Mon Apr  9 19:32:15 PDT 2012; root:xnu-1699.26.8~1/RELEASE_X86_64 x86_64
+  Window System:    The X.Org Foundation (11006000), display /tmp/launch-yb1uVf/org.x:0
+  Current Visual:   0x22 (class 4, depth 24)
+  Processor ID:     x86 Family 6 Model 5 Stepping 5, GenuineIntel
+  Virtual Machine:  Java 1.6.0_33-b03-424-11M3720 with Apple Inc. Java HotSpot(TM) Client VM mixed mode
+  Default Encoding:  ISO-8859-1
+
+Fault Count: 1
+
+Register State:
+  eax = 4422c000  ebx = 27a1eb9d
+  ecx = 22231415  edx = 00008d40
+  esi = 2538fe00  edi = 27b063c0
+  ebp = b4983bd8  esp = b4983bbc
+  eip = b8fe44fe  flg = 00010286
+
+Stack Trace:
+  [0] 0xb8fe44fe(36160, 0, 0xb4983c28, 0x27a0be55)
+  [1] Screen.mexmaci:PsychSetDrawingTarget~(0, 0xb4984118, 0xb498411c, 0x11fd3e66) + 236 bytes
+  [2] Screen.mexmaci:PsychOpenOnscreenWindow~(0xb498433c, 0xb4984338, 2, 0) + 4165 bytes
+  [3] Screen.mexmaci:SCREENOpenWindow~(0x23269198, 0xb4984468 "OpenWindow", 100, 0) + 1829 bytes
+  [4] Screen.mexmaci:mexFunction~(2, 0xb4984d48, 7, 0xb4984da8) + 1354 bytes
+  [5] libmex.dylib:mexRunMexFile(2, 0xb4984d48, 7, 0xb4984da8) + 107 bytes
+  [6] libmex.dylib:Mfh_mex::runMexFileWithSignalProtection(int, mxArray_tag**, int, mxArray_tag**)(0x26d42fc0, 2, 0xb4984d48, 7) + 111 bytes
+  [7] libmex.dylib:Mfh_mex::dispatch_file(int, mxArray_tag**, int, mxArray_tag**)(0x26d42fc0, 2, 0xb4984d48, 7) + 250 bytes
+  [8] libmwm_dispatcher.dylib:Mfh_file::dispatch_fh(int, mxArray_tag**, int, mxArray_tag**)(0x26d42fc0, 2, 0xb4984d48, 7) + 300 bytes
+  [9] libmwm_interpreter.dylib:ResolverFunctionDesc::CallFunction(int, mxArray_tag**, int, mxArray_tag**)(0xb4985338 "PÊy", 2, 0xb4984d48, 7) + 793 bytes
+  [10] libmwm_interpreter.dylib:Resolver::CallMFunction(int, int, _m_operand*, m_operand_storage*, int, _m_operand*, m_operand_storage*, int*)(0xb4984f14, 2, 2, 0x233d9fc0) + 1462 bytes
+  [11] libmwm_interpreter.dylib:inResolveMFunctionCall(_m_function_desc*, int, int, _m_operand*, m_operand_storage*, int, _m_operand*, m_operand_storage*, int*, inMarshalType*, int, mpsTypeSequenceNlhs const*, mxArray_tag* (*)(int))(0x2c324c50, 2, 2, 0x233d9fc0) + 462 bytes
+  [12] libmwm_interpreter.dylib:accelImpl::MFunctionCall(_accelOp**)(0xb4985484, 0xb4985498, 0xb4985454, 0x0052fa6a) + 269 bytes
+  [13] libmwm_interpreter.dylib:accelImpl::Exec()(0xb4985484, 0x99cb451d, 0xb4985868, 4) + 199 bytes
+  [14] libmwm_interpreter.dylib:accelCode::Call(inMarshalType*, int*) const(0x2c317af0 "è_ ", 0xb49855f8, 0xb49855f4, 0) + 100 bytes
+  [15] libmwm_interpreter.dylib:inJit::ExecuteHotSegment(_inJitAccelInfo*, opcodes*, int*, int*)(0xb4985830, 0xb498587c, 0xb498584c, 0xb4985a40) + 1338 bytes
+  [16] libmwm_interpreter.dylib:inInterp(inDebugCheck, int, int, opcodes, inPcodeNest_tag volatile*, int*)(1, 648, 42, 0) + 7720 bytes
+  [17] libmwm_interpreter.dylib:protected_inInterp(inDebugCheck, int, int, opcodes, inPcodeNest_tag*, int*)(1, 648, 31, 0) + 112 bytes
+  [18] libmwm_interpreter.dylib:inInterPcodeSJ(inDebugCheck, int, int, opcodes, inPcodeNest_tag*, int*)(0, 0x24cf60d0, 0xb4985a40, 0xb4985a40) + 266 bytes
+  [19] libmwm_interpreter.dylib:inExecuteMFunctionOrScript(Mfh_mp*, bool)(0x2399c230 "È\ ", 0, 0x2399c230 "È\ ", 4) + 932 bytes
+  [20] libmwm_interpreter.dylib:inRunMfile(int, mxArray_tag**, int, mxArray_tag**, Mfh_mp*, inWorkSpace_tag*)(0, 0xb4985ea8, 2, 0xb4985f08) + 696 bytes
+  [21] libmwm_interpreter.dylib:Mfh_mp::dispatch_file(int, mxArray_tag**, int, mxArray_tag**)(0x2399c230 "È\ ", 0, 0xb4985ea8, 2) + 56 bytes
+  [22] libmwm_dispatcher.dylib:Mfh_file::dispatch_fh(int, mxArray_tag**, int, mxArray_tag**)(0x2399c230 "È\ ", 0, 0xb4985ea8, 2) + 300 bytes
+  [23] libmwm_interpreter.dylib:ResolverFunctionDesc::CallFunction(int, mxArray_tag**, int, mxArray_tag**)(0xb4986498 "PÊy", 0, 0xb4985ea8, 2) + 793 bytes
+  [24] libmwm_interpreter.dylib:Resolver::CallMFunction(int, int, _m_operand*, m_operand_storage*, int, _m_operand*, m_operand_storage*, int*)(0xb4986074, 0, 1, 0x2c3b1540) + 1462 bytes
+  [25] libmwm_interpreter.dylib:inResolveMFunctionCall(_m_function_desc*, int, int, _m_operand*, m_operand_storage*, int, _m_operand*, m_operand_storage*, int*, inMarshalType*, int, mpsTypeSequenceNlhs const*, mxArray_tag* (*)(int))(0x2c326b20, 0, 1, 0x2c3b1540) + 462 bytes
+  [26] libmwm_interpreter.dylib:accelImpl::MFunctionCall(_accelOp**)(0xb49865e4, 0xb49865f8 "hQ2,", 0x0c146000, 0xb49864b8) + 269 bytes
+  [27] libmwm_interpreter.dylib:accelImpl::Exec()(0xb49865e4, 0x0c146120, 0xb4986628, 4) + 199 bytes
+  [28] libmwm_interpreter.dylib:accelCode::Call(inMarshalType*, int*) const(0x2c3b2fb0 "è_ ", 0xb4986758, 0xb4986754, 0) + 100 bytes
+  [29] libmwm_interpreter.dylib:inJit::ExecuteHotSegment(_inJitAccelInfo*, opcodes*, int*, int*)(0xb4986990, 0xb49869dc, 0xb49869ac, 0xb4986ba0) + 1338 bytes
+  [30] libmwm_interpreter.dylib:inInterp(inDebugCheck, int, int, opcodes, inPcodeNest_tag volatile*, int*)(1, 1009, 114, 0) + 7720 bytes
+  [31] libmwm_interpreter.dylib:protected_inInterp(inDebugCheck, int, int, opcodes, inPcodeNest_tag*, int*)(1, 1009, 47, 0) + 112 bytes
+  [32] libmwm_interpreter.dylib:inInterPcodeSJ(inDebugCheck, int, int, opcodes, inPcodeNest_tag*, int*)(0, 0x05d156d0, 0xb4986ba0, 0xb4986ba0) + 266 bytes
+  [33] libmwm_interpreter.dylib:inExecuteMFunctionOrScript(Mfh_mp*, bool)(0x05984640 "È\ ", 0, 0x05984640 "È\ ", 0) + 932 bytes
+  [34] libmwm_interpreter.dylib:inRunMfile(int, mxArray_tag**, int, mxArray_tag**, Mfh_mp*, inWorkSpace_tag*)(0, 0xb4986e78, 0, 0xb4986ed8) + 696 bytes
+  [35] libmwm_interpreter.dylib:Mfh_mp::dispatch_file(int, mxArray_tag**, int, mxArray_tag**)(0x05984640 "È\ ", 0, 0xb4986e78, 0) + 56 bytes
+  [36] libmwm_dispatcher.dylib:Mfh_file::dispatch_fh(int, mxArray_tag**, int, mxArray_tag**)(0x05984640 "È\ ", 0, 0xb4986e78, 0) + 300 bytes
+  [37] libmwm_interpreter.dylib:inDispatchFromStack(int, char const*, int, int)(747, 0, 0, 0) + 990 bytes
+  [38] libmwm_interpreter.dylib:inCallFcnFromReference(27, 0xfffffffc, 1, 0) + 186 bytes
+  [39] libmwm_interpreter.dylib:inInterp(inDebugCheck, int, int, opcodes, inPcodeNest_tag volatile*, int*)(1, 0, 1, 0) + 2212 bytes
+  [40] libmwm_interpreter.dylib:protected_inInterp(inDebugCheck, int, int, opcodes, inPcodeNest_tag*, int*)(1, 0, 1, 0) + 112 bytes
+  [41] libmwm_interpreter.dylib:inInterPcodeSJ(inDebugCheck, int, int, opcodes, inPcodeNest_tag*, int*)(0, 0x05d47320, 0xb49873e0, 0xb49873e0) + 266 bytes
+  [42] libmwm_interpreter.dylib:inExecuteMFunctionOrScript(Mfh_mp*, bool)(0x05df2cc0 "È\ ", 1, 0xb498791c, 0) + 932 bytes
+  [43] libmwm_interpreter.dylib:inRunMfile(int, mxArray_tag**, int, mxArray_tag**, Mfh_mp*, inWorkSpace_tag*)(0, 0xb498791c, 0, 0) + 696 bytes
+  [44] libmwm_interpreter.dylib:Mfh_mp::dispatch_file(int, mxArray_tag**, int, mxArray_tag**)(0x05df2cc0 "È\ ", 0, 0xb498791c, 0) + 56 bytes
+  [45] libmwm_dispatcher.dylib:Mfh_file::dispatch_fh(int, mxArray_tag**, int, mxArray_tag**)(0x05df2cc0 "È\ ", 0, 0xb498791c, 0) + 300 bytes
+  [46] libmwm_interpreter.dylib:inEvalPcodeHeaderToWord(_memory_context*, int, mxArray_tag**, _pcodeheader*, Mfh_mp*, unsigned int)(6

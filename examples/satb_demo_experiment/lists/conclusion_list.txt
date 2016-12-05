@@ -1,0 +1,1 @@
+Line_Number	Stimulus	Response_Code	Stimulus_Type	Stimulus_Duration1	layout_evaluator('conclusion_layout.txt',[5 2])	0	xfn	Inf

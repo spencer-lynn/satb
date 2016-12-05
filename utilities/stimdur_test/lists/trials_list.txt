@@ -1,0 +1,1 @@
+Line_Number	Stimulus	Response_Code	Stimulus_Type	Stimulus_Duration1	get_signal	NaN	xfn	0.52	get_signal	NaN	xfn	0.53	get_signal	NaN	xfn	0.54	get_signal	NaN	xfn	0.55	get_signal	NaN	xfn	0.56	get_signal	NaN	xfn	0.57	get_signal	NaN	xfn	0.58	get_signal	NaN	xfn	0.59	get_signal	NaN	xfn	0.510	get_signal	NaN	xfn	0.5

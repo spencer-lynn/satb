@@ -1,0 +1,74 @@
+
+ans = 
+
+    'stimdur_test'    '20120731T142022'    [1x32 char]
+
+Press "/?" for TARGET/S+ and "z" for FOIL/S- responses
+
+conditions = 
+
+        study: 'stimdur_test'
+    ttlPoints: 0
+     scenario: 'test'
+      stimset: 'test_faces1'
+
+
+
+PTB-INFO: This is Psychtoolbox-3 for Apple OS X, under Matlab (Version 3.0.9 - Build date: May 21 2012).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Broken Apple OS/X 10.7 or later detected: Using CoreVideo timestamping instead of precise vbl-irq timestamping.
+
+
+PTB-INFO: You are using a multi-display setup (2 active displays):
+PTB-INFO: Please read 'help MultiDisplaySetups' for specific information on the Do's, Dont's,
+PTB-INFO: and possible causes of trouble and how to diagnose and resolve them.
+
+PTB-INFO: According to the operating system, some of your connected displays do not seem to 
+PTB-INFO: be switched into mirror mode. For a discussion of mirror mode vs. non-mirror mode,
+PTB-INFO: please read 'help MirrorMode'.
+PTB-INFO: Implausible measured vblank endline 1050 indicates that the beamposition query workaround should be used for your GPU.
+PTB-INFO: Enabling the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: NVIDIA GeForce GT 330M OpenGL Engine :: 2.1 NVIDIA-8.0.51
+PTB-INFO: Renderer has 512 MB of VRAM and a maximum 477 MB of texture memory.
+PTB-INFO: VBL startline = 1050 , VBL Endline = 1050
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.699071 ms [59.883571 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 17.896392 ms [55.877184 Hz]. (278 valid samples taken, stddev=4.328920 ms.)
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+
+WARNING: Couldn't compute a reliable estimate of monitor refresh interval! Trouble with VBL syncing?!?
+
+
+----- ! PTB - ERROR: SYNCHRONIZATION FAILURE ! ----
+
+One or more internal checks (see Warnings above) indicate that synchronization
+of Psychtoolbox to the vertical retrace (VBL) is not working on your setup.
+
+This will seriously impair proper stimulus presentation and stimulus presentation timing!
+Please read 'help SyncTrouble' for information about how to solve or work-around the problem.
+You can force Psychtoolbox to continue, despite the severe problems, by adding the command
+Screen('Preference', 'SkipSyncTests', 1); at the top of your script, if you really know what you are doing.
+
+
+{??? Error using ==> Screen
+
+Error in ==> <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/runexpt/init_ptb.m',42,0)">init_ptb at 42</a>
+[w, wRect]=Screen('OpenWindow',screenNumber, bkgndColor,[],32,2,stereomode);
+
+Error in ==> <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/stimdur_test.m',124,0)">stimdur_test at 124</a>
+init_ptb(1,0); %Start PsychToolBox. flags=hidecursor,pause. Pause=0 since setting a custom "ready"
+screen in main_inits fn.
+} 
+clc
+stimdur_test

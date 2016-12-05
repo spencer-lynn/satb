@@ -1,0 +1,25 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 How to process Run Letter Span data \
+= RLS or span data \
+- Output from the Engle\'92s eprime program for assessing working memory capacity.\
+\
+The .txt files have an odd format (odd encoding and line breaks) that I can't get Matlab to open correctly. But, Text Wrangler can fix them. So I made an Automator workflow to do that.\
+\
+1. Open all the files (the txt files, not the eda2 files) at one time into TextWrangler.\
+2. Double-click the "Convert RLS file.app" workflow.\
+- it'll process and save all the open files \'97 change encoding to UTF8 and line breaks to Unix.\
+\
+3. If needed, move the files to the study's data/ rls_data/ directory, so Matlab can find them.\
+- I\'92ve taken to adding a space in front, like \'93 rls_data\'94\
+\
+4. In Matlab, run >>rls_process \
+- must CD to current experiment\'92s directory, e.g. >>cdwork('utd'). The script expects /data/rls_data.\
+	- you might have to move the rls_data directory if it\'92s living in a \'93data/exclude\'94 folder.\
+- extracted data are written to " rls_processed.dat" in same folder.\
+\
+5. Paste the data into SPSS.}

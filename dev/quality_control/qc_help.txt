@@ -1,0 +1,51 @@
+Instructions for performing Quality Control processing 
+on SIGNALS experiment data:
+
+Open a file from the file-list on the right side of the QC Panel window by double-clicking it.
+
+Step 1: Evaluate Response Times
+- Press the Plot Response Time button.
+- Two graphs will appear. You are looking for times that seem either way too fast (anything under 250 
+milliseconds is too fast because the person is incapable of processing the faces in such a short time) or 
+too slow (something over 5000 suggests that the person was taking a break and not paying attention to 
+responding correctly). 
+- To exclude short or long responses, type values to the Min. RT or Max RT text-boxes. Press return to 
+apply the changes. You can press the Plot button again to see the changes.
+
+Step 2: Locate learning peak/plateau
+- Press the Plot Block 1 Performance button.
+- Look at the graph to see where it appears the person's sensitivity to the task maximized or appeared 
+to level off. You should notice that the graph rises and then meets some maximum that appears to 
+remain somewhat stable before it drops off. In the last trials the sensitivity fluctuates a lot; thats why 
+there is such a big drop off near the end. 
+- Usually people's sensitivity maximizes sometime around trial 100-150. It varies by subject. 
+- Once you have found the trial number that seems to be the peak in their learning, enter that value in 
+the Start Trial# box and press return.
+
+Step 3: Fine-tune the response threshold location
+- Press the Plot Button Presses button. You will be prompted to match up a few ambiguous data points 
+(X11 goes with Y11, etc.). Do this and press OK. 
+- Press the Plot Threshold button.
+- Ideally the threshold should be a nice sigmoid or "S" shape. If this is not the case you may want to 
+eliminate some of the button presses that are changing flattening the S shape. 
+- It is tempting to trim the data a lot to make the S threshold look better, but as a rule of thumb it's ok 
+to eliminate points at stimuli 1 & 2 and 10 & 11, but it becomes a little less obvious when to remove 
+points as you get closer to the more central stimuli because the faces become less recognizable as 
+more or less threatening; it is hard to know if the participant made a mistake or actually couldn't tell 
+what the face was. Use your best judgement and use the threshold graph to help you.
+- To remove a response data-point, go back to the Button Presses graph and use the Paint Brush tool to 
+highlight the desired point (it should turn red). Right click on the highlighted point and choose "Replace 
+with > NaNs".
+- Press the Refresh Threshold button to see how replacing the value has changed the shape and 
+inflection point of the graph. 
+-When you are satisfied, press the Save button.
+
+Next, for experiments that have more than one block of conditions, move on to the next 
+blocks/conditions for the current participant. Repeat the above 3 steps. Remember to save after each 
+block. 
+
+If you decide to stop working keep track of the file/block in which you left off because you might have 
+to use another computer and you won't know where you left off.
+
+Hope this is helpful,
+Monica

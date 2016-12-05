@@ -1,0 +1,145 @@
+
+ans = 
+
+    'stimdur_test'    '20120731T151209'    [1x32 char]
+
+Press "z" for TARGET/S+ and "/?" for FOIL/S- responses
+
+conditions = 
+
+        study: 'stimdur_test'
+    ttlPoints: 0
+     scenario: 'test'
+      stimset: 'test_faces1'
+
+
+
+PTB-INFO: This is Psychtoolbox-3 for Apple OS X, under Matlab (Version 3.0.9 - Build date: May 21 2012).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Broken Apple OS/X 10.7 or later detected: Using CoreVideo timestamping instead of precise vbl-irq timestamping.
+PTB-INFO: Implausible measured vblank endline 1050 indicates that the beamposition query workaround should be used for your GPU.
+PTB-INFO: Enabling the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: NVIDIA GeForce GT 330M OpenGL Engine :: 2.1 NVIDIA-8.0.51
+PTB-INFO: Renderer has 512 MB of VRAM and a maximum 477 MB of texture memory.
+PTB-INFO: VBL startline = 1050 , VBL Endline = 1050
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.699139 ms [59.883326 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.697770 ms [59.888238 Hz]. (50 valid samples taken, stddev=0.072988 ms.)
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Support for fast OffscreenWindows enabled.
+
+ans = 
+
+       distnTarget: 'normal'
+                 h: 10
+                 m: -3
+         distnFoil: 'normal'
+                 a: -7
+                 j: 10
+                D0: 0
+          baserate: 0.5000
+          muTarget: 7
+         varTarget: 1.5000
+            muFoil: 5
+           varFoil: 1.5000
+    x_range_target: [1 2 3 4 5 6 7 8 9 10 11]
+      x_range_foil: [1 2 3 4 5 6 7 8 9 10 11]
+
+
+ Stimuli duration tunings:
+Elapsed time is 0.535493 seconds.
+Elapsed time is 0.533315 seconds.
+Elapsed time is 0.532824 seconds.
+Elapsed time is 0.529859 seconds.
+Elapsed time is 0.530340 seconds.
+Elapsed time is 0.529114 seconds.
+Elapsed time is 0.528464 seconds.
+Elapsed time is 0.527890 seconds.
+Elapsed time is 0.526205 seconds.
+Elapsed time is 0.525574 seconds.
+Elapsed time is 0.524711 seconds.
+Elapsed time is 0.522876 seconds.
+Elapsed time is 0.522730 seconds.
+Elapsed time is 0.519658 seconds.
+Elapsed time is 0.520213 seconds.
+Elapsed time is 0.519325 seconds.
+Elapsed time is 0.518010 seconds.
+Elapsed time is 0.518222 seconds.
+Elapsed time is 0.518137 seconds.
+Elapsed time is 0.514563 seconds.
+Elapsed time is 0.513631 seconds.
+Elapsed time is 0.513335 seconds.
+Elapsed time is 0.511399 seconds.
+Elapsed time is 0.509900 seconds.
+
+Tuning_Results_in_secs = 
+
+    [0.5000]    '= target dur'   
+    [0.5000]    '= round target' 
+    [0.5510]    '= initial dur'  
+    [0.5009]    '= final dur'    
+    [0.4810]    '= requested dur'
+
+Initial difference = 51.0464 msec.
+Final difference = 0.93072 msec.
+
+paramset =
+
+test
+
+
+ans = 
+
+       distnTarget: 'normal'
+                 h: 10
+                 m: -3
+         distnFoil: 'normal'
+                 a: -7
+                 j: 10
+                D0: 0
+          baserate: 0.5000
+          muTarget: 7
+         varTarget: 1.5000
+            muFoil: 5
+           varFoil: 1.5000
+    x_range_target: [1 2 3 4 5 6 7 8 9 10 11]
+      x_range_foil: [1 2 3 4 5 6 7 8 9 10 11]
+
+
+ans =
+
+lists/feedback_trials_list.txt
+
+Elapsed time is 0.511799 seconds.
+Elapsed time is 0.515436 seconds.
+Elapsed time is 0.513902 seconds.
+Elapsed time is 0.513489 seconds.
+Elapsed time is 0.512170 seconds.
+Elapsed time is 0.513607 seconds.
+Elapsed time is 0.513618 seconds.
+Elapsed time is 0.513619 seconds.
+Elapsed time is 0.512464 seconds.
+Elapsed time is 0.513855 seconds.
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 35 times out of a total of 73 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+

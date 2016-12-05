@@ -1,0 +1,1 @@
+Stimulus	Response_Code	Stimulus_Type	Font_Name	x	y	Size	Red	Green	Blue	Line_NumberThat was correct.	CR	text	Arial	center	.5*bottom-1.5*30	24	255	255	255	1strcat([num2str(signal_params.j) ' points.'])	j	text	Arial	center	.5*bottom+1.5*30	24	0	255	0	2strcat([num2str(conditions.ttlPoints) ' points total.'])	ttlPoints	text	Arial	center	.5*bottom+3*30	24	255	255	255	3

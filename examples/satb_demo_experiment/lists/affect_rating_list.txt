@@ -1,0 +1,1 @@
+Line_Number	Stimulus	Response_Code	Stimulus_Type	x	y	Stimulus_Duration	Size1	valence.jpg	rating	image	center	center	Inf	1002	arousal.jpg	rating	image	center	center	Inf	100

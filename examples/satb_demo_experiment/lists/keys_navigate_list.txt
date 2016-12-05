@@ -1,0 +1,1 @@
+Stimulus	Response_Code	Line_NumberLeftArrow	backward	1RightArrow	forward	2left	backward	3right	forward	4z	backward	5/?	forward	6

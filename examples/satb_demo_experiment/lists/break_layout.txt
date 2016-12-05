@@ -1,0 +1,1 @@
+Line_Number	Stimulus	Stimulus_Type	Font_Name	x	y	Size	Red	Green	Blue1	Half-way done! Take a break.	text	Arial	center	(.5*bottom)-(3*40)	40	225	225	2252	Press [space bar] to continue.	text	Arial	center	(.5*bottom)-(1*40)	40	225	225	2253	strcat([num2str(conditions.ttlPoints) ' points earned so far.'])	text	Arial	center	(.5*bottom)+(1*40)	24	225	225	225

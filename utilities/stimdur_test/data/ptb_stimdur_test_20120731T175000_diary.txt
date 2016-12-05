@@ -1,0 +1,63 @@
+
+ans = 
+
+    'ptb_stimdur_test'    '20120731T175000'    [1x36 char]
+
+
+conditions = 
+
+        study: 'ptb_stimdur_test'
+    ttlPoints: 0
+     scenario: 'test'
+      stimset: 'test_faces1'
+
+
+
+PTB-INFO: This is Psychtoolbox-3 for Apple OS X, under Matlab (Version 3.0.9 - Build date: May 21 2012).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Broken Apple OS/X 10.7 or later detected: Using CoreVideo timestamping instead of precise vbl-irq timestamping.
+PTB-INFO: Implausible measured vblank endline 1050 indicates that the beamposition query workaround should be used for your GPU.
+PTB-INFO: Enabling the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: NVIDIA GeForce GT 330M OpenGL Engine :: 2.1 NVIDIA-8.0.51
+PTB-INFO: Renderer has 512 MB of VRAM and a maximum 477 MB of texture memory.
+PTB-INFO: VBL startline = 1050 , VBL Endline = 1050
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.699103 ms [59.883455 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.699287 ms [59.882795 Hz]. (50 valid samples taken, stddev=0.062131 ms.)
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Support for fast OffscreenWindows enabled.
+
+ans = 
+
+          Line_Number: {'1'}
+             Stimulus: {'get_signal'}
+        Response_Code: {'NaN'}
+        Stimulus_Type: {'xfn'}
+    Stimulus_Duration: 0.5000
+                 wptr: 10
+
+{Warning: FOR loop index is too large. Truncating to 2147483647.} 
+> In <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/ptb_stimdur_test.m',115,1)">ptb_stimdur_test>loop_a_stim at 115</a>
+  In <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/ptb_stimdur_test.m',99,1)">ptb_stimdur_test at 99</a>
+{??? Undefined variable "conditions" or class "conditions.stimset".
+
+Error in ==> <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/ptb_stimdur_test.m',118,0)">ptb_stimdur_test>loop_a_stim at 118</a>
+        stimfilename=strcat(stimdir,conditions.stimset,'/','stim1.tif'); %hard-coded image
+        stimulus, must reside in correct folder.
+
+Error in ==> <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/ptb_stimdur_test.m',99,0)">ptb_stimdur_test at 99</a>
+loop_a_stim(trialinfo,stimdur,soa)
+} 
+ 
+cleanup

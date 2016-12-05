@@ -1,0 +1,92 @@
+
+ans = 
+
+    'stimdur_test'    '25-Jul-2012 12:37:42'    [1x37 char]
+
+Press "z" for TARGET/S+ and "/?" for FOIL/S- responses
+
+conditions = 
+
+        study: 'stimdur_test'
+    ttlPoints: 0
+     scenario: 'test'
+      stimset: 'test_faces1'
+
+
+
+PTB-INFO: This is Psychtoolbox-3 for Apple OS X, under Matlab (Version 3.0.9 - Build date: May 21 2012).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Broken Apple OS/X 10.7 or later detected: Using CoreVideo timestamping instead of precise vbl-irq timestamping.
+PTB-INFO: Implausible measured vblank endline 1050 indicates that the beamposition query workaround should be used for your GPU.
+PTB-INFO: Enabling the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: NVIDIA GeForce GT 330M OpenGL Engine :: 2.1 NVIDIA-7.18.18
+PTB-INFO: Renderer has 512 MB of VRAM and a maximum 475 MB of texture memory.
+PTB-INFO: VBL startline = 1050 , VBL Endline = 1050
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.699117 ms [59.883406 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.698594 ms [59.885283 Hz]. (53 valid samples taken, stddev=0.199266 ms.)
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Support for fast OffscreenWindows enabled.
+
+paramset =
+
+test
+
+
+ans = 
+
+       distnTarget: 'normal'
+                 h: 10
+                 m: -3
+         distnFoil: 'normal'
+                 a: -7
+                 j: 10
+                D0: 0
+          baserate: 0.5000
+          muTarget: 7
+         varTarget: 1.5000
+            muFoil: 5
+           varFoil: 1.5000
+    x_range_target: [1 2 3 4 5 6 7 8 9 10 11]
+      x_range_foil: [1 2 3 4 5 6 7 8 9 10 11]
+
+
+ans =
+
+lists/feedback_tirals_list.txt
+
+Error - Experiment stopped.
+Type control-c [RETURN] cleanup [RETURN] if problems.
+{??? Error using ==> <a href="matlab: opentoline('/Applications/MATLAB_R2010a.app/toolbox/matlab/iofun/importdata.m',136,0)">importdata at 136</a>
+Unable to open file.
+
+Error in ==> <a href="matlab: opentoline('/Applications/MATLAB_R2010a.app/toolbox/matlab/iofun/importdata.m',136,0)">importdata at 136</a>
+        error('MATLAB:importdata:FileNotFound', 'Unable to open file.');
+
+Error in ==> <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/runexpt/read_list.m',22,0)">read_list at 22</a>
+dataout=importdata(pathtofile,'\t',1); %importdata is a builtin ML fn, creates a struct with two
+parts: .data and .textdata
+
+Error in ==> <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/stimdur_test.m',196,0)">stimdur_test>block_trials at 196</a>
+feedbackinfo=read_list(strcat(listfolder,'feedback_',Block,'_list.txt')); %Details of feedback
+after each trial, dependent on decision outcome.
+
+Error in ==> <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/stimdur_test.m',166,0)">stimdur_test>signalsTask at 166</a>
+block_trials('trials_list.txt','keys_yesno_list.txt',reps) %will repeat trial list reps #times.
+
+Error in ==> <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/stimdur_test.m',119,0)">stimdur_test at 119</a>
+    signalsTask(conditions.scenario,tReps,conditions.stimset)
+} 
+
+cleanup

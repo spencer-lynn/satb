@@ -1,0 +1,1 @@
+Line_Number	Stimulus	Response_Code	Stimulus_Type	x	y	Size	Stimulus_Duration1	backmask_face.tif	NaN	image	center	center	100	0.5

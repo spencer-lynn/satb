@@ -1,0 +1,189 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;\f2\fmodern\fcharset0 Courier-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red255\green39\blue18;}
+\margl1440\margr1440\vieww13180\viewh14820\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b\fs24 \cf0 Signals Approach Toolbox (SATB)
+\b0 \
+\
+This file describes changes involved in moving from SATB v2 to v3 (in Spring 2011)\
+- and updates to v3 (after Spring 2011).\
+- v2 was used through SB1 experiment (incl Sig3, Army2, CATSD2). From Spring 2011, experiments began using v3.\
+- Spring 2011 =  dev v3.00\'85v3.12. Developed for ZM, UTD. Also used for SB2, SB3.\
+- Fall 2012 = dev v3.20. Used for OTD.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf2 == TO DO ==
+\b0 \cf0 \
+- dev get_response\
+- recode pos/neg objtype as target/foil (in: fetch_signal/assign_value, )\
+- reconcile compare_params 2 v 3\
+\
+
+\b \cf2 == DONE Fall 2012 ==
+\b0 \cf0 \
+v3.2 = Updates for ARI-signals (otd.m)\
+= Feature additions; should be backwards compatible for expts using v3xx\
+- increased accuracy in 
+\f1 tune_stimdur by setting "integer" from 1 to 10.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0 \cf0 - confirmed that it appears okay to remove old globals 
+\b Block, paramset, stimset
+\b0 , and 
+\b condition 
+\b0 from EXPT.m programs. Did that for otd.m\
+- edited response_feedback.m =  payoffs used as dynamic references to struc-fields, so cannot end in + or - chars. I changed D- to Dminus, etc.\
+- Continued adding new parameter-field types to set_params. Using Dplus/minus as payoff codes (amount=0) confidence rated stims.\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf2 == DONE 
+\b0 \cf0 Spring 2011, coding for v3  
+\b \cf2 ==\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 SATB updates, Spring 2011 \
+- transition from sigbasics1 to zero-miss, UTD\
+\
+New Globals: \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 = signal_params
+\b0 , a struct of scenario parameters created by set_params\
+= moved ttlPoints to a field in conditions struct.\
+\
+Old globals: don't seem to be used anymore, so can eliminate from new expts (ie, UTD).\
+
+\b paramset
+\b0  is now covered by conditions.scenario;\
+
+\b stimset
+\b0  is now covered by conditions.stimset;\
+
+\b condition
+\b0   (eg, = 'trials') now covered by 
+\f1 block_label (eg for ratings) or other means (in block_trials).
+\f0 \
+\pard\pardeftab720
+
+\f1 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0 \cf0 \
+\
+\
+Updated Functions\
+=
+\b  set_params: 
+\b0 now creates global signal_params, includes point values\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 = assign_signal -> renamed as "fetch_signal"
+\b0 \
+- now uses global signal_params\
+- assign_signal is now in fetch_signal\
+- So, what happens when old code calls fetch_signal?\
+- - should work: set_params,signal_params are can use old param formats.\
+\
+= 
+\b read_stim
+\b0 :  now called "read_list"\
+- row-oriented structs, open-ended number of columns of exact names.\
+- list files should put numeric data in last columns, after text data. Row numbers can stay first.\
+- reads any #cols, transforms to struct of rows\
+- requires changes to how a trial's info is pulled from the stiminfo var (ref a field name rather than a column number)\
+\
+=  
+\b load_stim
+\b0 \
+- separate functions called in list file objtype (trial_info.Stimulus_Type column)\
+\
+= 
+\b show_stim_trigger
+\b0 : sends a trigger. \
+- requires extra cols, so created new read_stim/list format\
+- Just keep this fn separate from show_stim_stereo for now. \
+\
+
+\b = show_stim
+\b0 \
+- uses new read_list, listfile format\
+- expects single trial_info rather than entire stiminfo\
+- should change show_stim (all of them) to return a struct\
+- should break out button-press detection\
+\
+=
+\b fetch_signal -> renamed to "get_signal"
+\b0 \
+- over writes global stiminfo using xtrial\
+- updates stiminfo=trial_list as a global for logging\
+- uses global stimulus_info to get run-time stim values.\
+- can be improved to be less dependent on globals, write to conditions maybe?\
+\
+
+\b = decision_outcome
+\b0 : uses trial and stiminfo - BUT can be passed mystiminfo, so easy fix.\
+
+\b = layout_evaluator\
+= set_keys
+\b0  (renamed from getkeys)\
+\pard\pardeftab720
+
+\f2\b \cf0 = set_responseKeys
+\f0\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 = response_feedback
+\b0  (w/ feedbackinfo, pointsinfo)\
+
+\b = getpoints 
+\b0 (renamed accrue_payoff) -but then depricated by combo of layout_eval/show_stim\
+
+\b =feedback_layout 
+\b0  -but then depricated by combo of layout_eval/show_stim\
+\
+
+\b Implementing Triggers
+\b0 \
+trigger_list file for defns\
+global conditions.triggerID - accessed by get_signals_trigger, show_stim_trigger\
+- it's a row index into the trigger list.\
+conditions.triggerID must be set once the stim has been chosen, using it's response code (eg, by get_signals, or in block_rating).\
+\
+\
+
+\b Stimulus duration tuning\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 - new tune stim dur for v3 implemented in UTD expt.\
+My system has a ~30ms overshoot of stimulus durations, has a ca. 15 ms minimum duration after tuning. Or maybe just a 12 ms?\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 The sequence
+\b0 \
+-> show_stim loads target, flips to show it, waits for duration (while checking for legal key presses)\
+-> after duration, control passes on\'85 to next show_stim call (which might be response window, mask, payoff, etc).\
+\
+So:\
+=> part of delay is disk-reads by loadstim prior to the next flip (showing, eg, mask).\
+=> part of the delay is key-detection by show_stim during the target duration.\
+- figure it out with GetSecs\
+\
+
+\b tune_stimdur
+\b0 \
+- takes into account a particular following-stim when tuning a target duration. When the following stim is a response window AND the response window can be bypassed by pressing 
+\i during
+\i0  the target's duration, then the lag caused by loadstim will be different than that which tune_stimdur took into account. So, if uses skips response window, going straight to payoff screen and loading the payoff takes more time than loading the response window, there will be an increase in target stimulus duration.\
+=> good reason to require the response window. Though, for short-duration, time critical targets, user probably can't respond during presentation anyway.\
+\
+
+\b write_data 
+\b0 - thought about making more flexible, re trigger info. Skipped this idea. Better to just use fprintf as needed. Depricated write_data}

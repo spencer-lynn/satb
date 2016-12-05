@@ -1,0 +1,383 @@
+
+ans = 
+
+    'stimdur_test'    '20120731T161553'    [1x32 char]
+
+Press "z" for TARGET/S+ and "/?" for FOIL/S- responses
+
+conditions = 
+
+        study: 'stimdur_test'
+    ttlPoints: 0
+     scenario: 'test'
+      stimset: 'test_faces1'
+
+
+
+PTB-INFO: This is Psychtoolbox-3 for Apple OS X, under Matlab (Version 3.0.9 - Build date: May 21 2012).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Broken Apple OS/X 10.7 or later detected: Using CoreVideo timestamping instead of precise vbl-irq timestamping.
+PTB-INFO: Implausible measured vblank endline 1050 indicates that the beamposition query workaround should be used for your GPU.
+PTB-INFO: Enabling the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: NVIDIA GeForce GT 330M OpenGL Engine :: 2.1 NVIDIA-8.0.51
+PTB-INFO: Renderer has 512 MB of VRAM and a maximum 477 MB of texture memory.
+PTB-INFO: VBL startline = 1050 , VBL Endline = 1050
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.698900 ms [59.884183 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.693781 ms [59.902547 Hz]. (210 valid samples taken, stddev=0.199740 ms.)
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Support for fast OffscreenWindows enabled.
+
+ans = 
+
+          Line_Number: {'1'}
+             Stimulus: {'get_signal'}
+        Response_Code: {'NaN'}
+        Stimulus_Type: {'xfn'}
+    Stimulus_Duration: 0.0600
+                 wptr: 10
+
+
+ans = 
+
+       distnTarget: 'normal'
+                 h: 10
+                 m: -3
+         distnFoil: 'normal'
+                 a: -7
+                 j: 10
+                D0: 0
+          baserate: 0.5000
+          muTarget: 7
+         varTarget: 1.5000
+            muFoil: 5
+           varFoil: 1.5000
+    x_range_target: [1 2 3 4 5 6 7 8 9 10 11]
+      x_range_foil: [1 2 3 4 5 6 7 8 9 10 11]
+
+
+ Stimuli duration tunings:
+Elapsed time is 0.085237 seconds.
+Elapsed time is 0.092446 seconds.
+Elapsed time is 0.092851 seconds.
+Elapsed time is 0.091196 seconds.
+Elapsed time is 0.090750 seconds.
+Elapsed time is 0.087824 seconds.
+Elapsed time is 0.088243 seconds.
+Elapsed time is 0.087198 seconds.
+Elapsed time is 0.087101 seconds.
+Elapsed time is 0.084466 seconds.
+Elapsed time is 0.084915 seconds.
+Elapsed time is 0.083419 seconds.
+Elapsed time is 0.082658 seconds.
+Elapsed time is 0.081660 seconds.
+Elapsed time is 0.080909 seconds.
+Elapsed time is 0.080947 seconds.
+Elapsed time is 0.079382 seconds.
+Elapsed time is 0.077358 seconds.
+
+Tuning_Results_in_secs = 
+
+    [0.0600]    '= target dur'   
+    [0.0600]    '= round target' 
+    [0.0835]    '= initial dur'  
+    [0.0668]    '= final dur'    
+    [0.0460]    '= requested dur'
+
+Initial difference = 23.4645 msec.
+Final difference = 6.7558 msec.
+
+paramset =
+
+test
+
+
+ans = 
+
+       distnTarget: 'normal'
+                 h: 10
+                 m: -3
+         distnFoil: 'normal'
+                 a: -7
+                 j: 10
+                D0: 0
+          baserate: 0.5000
+          muTarget: 7
+         varTarget: 1.5000
+            muFoil: 5
+           varFoil: 1.5000
+    x_range_target: [1 2 3 4 5 6 7 8 9 10 11]
+      x_range_foil: [1 2 3 4 5 6 7 8 9 10 11]
+
+
+ans =
+
+lists/feedback_trials_list.txt
+
+{Warning: FOR loop index is too large. Truncating to 2147483647.} 
+> In <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/stimdur_test.m',241,1)">stimdur_test>block_trials at 241</a>
+  In <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/stimdur_test.m',203,1)">stimdur_test>signalsTask at 203</a>
+  In <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/stimdur_test.m',152,1)">stimdur_test at 152</a>
+Elapsed time is 0.083220 seconds.
+Elapsed time is 0.074350 seconds.
+Elapsed time is 0.076489 seconds.
+Elapsed time is 0.076185 seconds.
+Elapsed time is 0.076546 seconds.
+Elapsed time is 0.076692 seconds.
+Elapsed time is 0.076303 seconds.
+Elapsed time is 0.076887 seconds.
+Elapsed time is 0.076429 seconds.
+Elapsed time is 0.076481 seconds.
+Elapsed time is 0.076239 seconds.
+Elapsed time is 0.076237 seconds.
+Elapsed time is 0.076556 seconds.
+Elapsed time is 0.076590 seconds.
+Elapsed time is 0.076841 seconds.
+Elapsed time is 0.076570 seconds.
+Elapsed time is 0.077004 seconds.
+Elapsed time is 0.076307 seconds.
+Elapsed time is 0.076558 seconds.
+Elapsed time is 0.076450 seconds.
+Elapsed time is 0.076482 seconds.
+Elapsed time is 0.077286 seconds.
+Elapsed time is 0.076446 seconds.
+Elapsed time is 0.076557 seconds.
+Elapsed time is 0.076330 seconds.
+Elapsed time is 0.076765 seconds.
+Elapsed time is 0.076364 seconds.
+Elapsed time is 0.076503 seconds.
+Elapsed time is 0.075965 seconds.
+Elapsed time is 0.076851 seconds.
+Elapsed time is 0.076361 seconds.
+Elapsed time is 0.076431 seconds.
+Elapsed time is 0.076191 seconds.
+Elapsed time is 0.076781 seconds.
+Elapsed time is 0.076366 seconds.
+Elapsed time is 0.110766 seconds.
+Elapsed time is 0.074651 seconds.
+Elapsed time is 0.076424 seconds.
+Elapsed time is 0.076506 seconds.
+Elapsed time is 0.076660 seconds.
+Elapsed time is 0.076315 seconds.
+Elapsed time is 0.077101 seconds.
+Elapsed time is 0.076193 seconds.
+Elapsed time is 0.076430 seconds.
+Elapsed time is 0.076509 seconds.
+Elapsed time is 0.076793 seconds.
+Elapsed time is 0.076486 seconds.
+Elapsed time is 0.076349 seconds.
+Elapsed time is 0.076573 seconds.
+Elapsed time is 0.076916 seconds.
+Elapsed time is 0.076235 seconds.
+Elapsed time is 0.076874 seconds.
+Elapsed time is 0.076416 seconds.
+Elapsed time is 0.076052 seconds.
+Elapsed time is 0.076480 seconds.
+Elapsed time is 0.077222 seconds.
+Elapsed time is 0.077019 seconds.
+Elapsed time is 0.076629 seconds.
+Elapsed time is 0.076228 seconds.
+Elapsed time is 0.076371 seconds.
+Elapsed time is 0.076526 seconds.
+Elapsed time is 0.076609 seconds.
+Elapsed time is 0.076356 seconds.
+Elapsed time is 0.076817 seconds.
+Elapsed time is 0.076648 seconds.
+Elapsed time is 0.076419 seconds.
+Elapsed time is 0.076953 seconds.
+Elapsed time is 0.076275 seconds.
+Elapsed time is 0.076511 seconds.
+Elapsed time is 0.076286 seconds.
+Elapsed time is 0.076278 seconds.
+Elapsed time is 0.076212 seconds.
+Elapsed time is 0.076366 seconds.
+Elapsed time is 0.076968 seconds.
+Elapsed time is 0.076497 seconds.
+Elapsed time is 0.076269 seconds.
+Elapsed time is 0.078048 seconds.
+Elapsed time is 0.075876 seconds.
+Elapsed time is 0.076706 seconds.
+Elapsed time is 0.076571 seconds.
+Elapsed time is 0.076933 seconds.
+Elapsed time is 0.076498 seconds.
+Elapsed time is 0.076664 seconds.
+Elapsed time is 0.076259 seconds.
+Elapsed time is 0.076151 seconds.
+Elapsed time is 0.076712 seconds.
+Elapsed time is 0.076431 seconds.
+Elapsed time is 0.076470 seconds.
+Elapsed time is 0.076733 seconds.
+Elapsed time is 0.076377 seconds.
+Elapsed time is 0.076547 seconds.
+Elapsed time is 0.076481 seconds.
+Elapsed time is 0.076468 seconds.
+Elapsed time is 0.076516 seconds.
+Elapsed time is 0.076436 seconds.
+Elapsed time is 0.076527 seconds.
+Elapsed time is 0.076980 seconds.
+Elapsed time is 0.076667 seconds.
+Elapsed time is 0.075863 seconds.
+Elapsed time is 0.076495 seconds.
+Elapsed time is 0.076239 seconds.
+Elapsed time is 0.076772 seconds.
+Elapsed time is 0.076963 seconds.
+Elapsed time is 0.076703 seconds.
+Elapsed time is 0.077847 seconds.
+Elapsed time is 0.077172 seconds.
+Elapsed time is 0.076263 seconds.
+Elapsed time is 0.076076 seconds.
+Elapsed time is 0.076479 seconds.
+Elapsed time is 0.076808 seconds.
+Elapsed time is 0.076637 seconds.
+Elapsed time is 0.076718 seconds.
+Elapsed time is 0.077662 seconds.
+Elapsed time is 0.076525 seconds.
+Elapsed time is 0.076441 seconds.
+Elapsed time is 0.076930 seconds.
+Elapsed time is 0.076768 seconds.
+Elapsed time is 0.076399 seconds.
+Elapsed time is 0.076450 seconds.
+Elapsed time is 0.076638 seconds.
+Elapsed time is 0.075811 seconds.
+Elapsed time is 0.076207 seconds.
+Elapsed time is 0.075558 seconds.
+Elapsed time is 0.076426 seconds.
+Elapsed time is 0.076335 seconds.
+Elapsed time is 0.076823 seconds.
+Elapsed time is 0.076648 seconds.
+Elapsed time is 0.076564 seconds.
+Elapsed time is 0.077133 seconds.
+Elapsed time is 0.076158 seconds.
+Elapsed time is 0.076265 seconds.
+Elapsed time is 0.076423 seconds.
+Elapsed time is 0.076575 seconds.
+Elapsed time is 0.076429 seconds.
+Elapsed time is 0.076204 seconds.
+Elapsed time is 0.076374 seconds.
+Elapsed time is 0.076245 seconds.
+Elapsed time is 0.076478 seconds.
+Elapsed time is 0.076211 seconds.
+Elapsed time is 0.076330 seconds.
+Elapsed time is 0.076364 seconds.
+Elapsed time is 0.076901 seconds.
+Elapsed time is 0.075959 seconds.
+Elapsed time is 0.076403 seconds.
+Elapsed time is 0.076567 seconds.
+Elapsed time is 0.076417 seconds.
+Elapsed time is 0.076548 seconds.
+Elapsed time is 0.076926 seconds.
+Elapsed time is 0.076596 seconds.
+Elapsed time is 0.077386 seconds.
+Elapsed time is 0.077977 seconds.
+Elapsed time is 0.076598 seconds.
+Elapsed time is 0.076405 seconds.
+Elapsed time is 0.076615 seconds.
+Elapsed time is 0.076289 seconds.
+Elapsed time is 0.076514 seconds.
+Elapsed time is 0.076339 seconds.
+Elapsed time is 0.076520 seconds.
+Elapsed time is 0.076765 seconds.
+Elapsed time is 0.076478 seconds.
+Elapsed time is 0.076153 seconds.
+Elapsed time is 0.076555 seconds.
+Elapsed time is 0.076242 seconds.
+Elapsed time is 0.077817 seconds.
+Elapsed time is 0.076691 seconds.
+Elapsed time is 0.076917 seconds.
+Elapsed time is 0.076787 seconds.
+Elapsed time is 0.076268 seconds.
+Elapsed time is 0.078124 seconds.
+Elapsed time is 0.076501 seconds.
+Elapsed time is 0.076499 seconds.
+Elapsed time is 0.076979 seconds.
+Elapsed time is 0.076564 seconds.
+Elapsed time is 0.076326 seconds.
+Elapsed time is 0.076423 seconds.
+Elapsed time is 0.076380 seconds.
+Elapsed time is 0.076538 seconds.
+Elapsed time is 0.076399 seconds.
+Elapsed time is 0.076552 seconds.
+Elapsed time is 0.076536 seconds.
+Elapsed time is 0.076760 seconds.
+Elapsed time is 0.076359 seconds.
+Elapsed time is 0.076531 seconds.
+Elapsed time is 0.076462 seconds.
+Elapsed time is 0.076434 seconds.
+Elapsed time is 0.076535 seconds.
+Elapsed time is 0.076499 seconds.
+Elapsed time is 0.076413 seconds.
+Elapsed time is 0.076438 seconds.
+Elapsed time is 0.076477 seconds.
+Elapsed time is 0.076626 seconds.
+Elapsed time is 0.076758 seconds.
+Elapsed time is 0.076337 seconds.
+Elapsed time is 0.077186 seconds.
+Elapsed time is 0.076594 seconds.
+Elapsed time is 0.076934 seconds.
+Elapsed time is 0.076994 seconds.
+Elapsed time is 0.076489 seconds.
+Elapsed time is 0.076405 seconds.
+Elapsed time is 0.076606 seconds.
+Elapsed time is 0.077334 seconds.
+Elapsed time is 0.076781 seconds.
+Elapsed time is 0.076755 seconds.
+Elapsed time is 0.076392 seconds.
+Elapsed time is 0.076710 seconds.
+Elapsed time is 0.076282 seconds.
+Elapsed time is 0.076629 seconds.
+Elapsed time is 0.076474 seconds.
+Elapsed time is 0.076576 seconds.
+Elapsed time is 0.076617 seconds.
+Elapsed time is 0.076687 seconds.
+Elapsed time is 0.076579 seconds.
+Elapsed time is 0.076927 seconds.
+Elapsed time is 0.076473 seconds.
+Elapsed time is 0.076736 seconds.
+Elapsed time is 0.076670 seconds.
+Elapsed time is 0.076533 seconds.
+Elapsed time is 0.076601 seconds.
+Elapsed time is 0.076234 seconds.
+Elapsed time is 0.077391 seconds.
+Elapsed time is 0.076571 seconds.
+Elapsed time is 0.076863 seconds.
+Elapsed time is 0.076944 seconds.
+Elapsed time is 0.076373 seconds.
+Elapsed time is 0.076954 seconds.
+Elapsed time is 0.076651 seconds.
+Elapsed time is 0.077312 seconds.
+Elapsed time is 0.076618 seconds.
+Elapsed time is 0.076798 seconds.
+Elapsed time is 0.076737 seconds.
+Elapsed time is 0.076630 seconds.
+Elapsed time is 0.076636 seconds.
+Elapsed time is 0.076499 seconds.
+Elapsed time is 0.076320 seconds.
+Elapsed time is 0.076275 seconds.
+Elapsed time is 0.076936 seconds.
+Elapsed time is 0.076399 seconds.
+Elapsed time is 0.076612 seconds.
+Elapsed time is 0.076688 seconds.
+Elapsed time is 0.076980 seconds.
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 260 times out of a total of 521 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+

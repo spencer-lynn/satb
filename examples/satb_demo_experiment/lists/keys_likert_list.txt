@@ -1,0 +1,1 @@
+Stimulus	Response_Code	Line_Number1!	1	102@	2	113#	3	124$	4	135%	5	146^	6	157&	7	168*	8	179(	9	18

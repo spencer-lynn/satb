@@ -1,0 +1,197 @@
+
+ans = 
+
+    'satb_stimdur_test'    '20120731T170203'    [1x37 char]
+
+Press "/?" for TARGET/S+ and "z" for FOIL/S- responses
+
+conditions = 
+
+        study: 'satb_stimdur_test'
+    ttlPoints: 0
+     scenario: 'test'
+      stimset: 'test_faces1'
+
+
+
+PTB-INFO: This is Psychtoolbox-3 for Apple OS X, under Matlab (Version 3.0.9 - Build date: May 21 2012).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Broken Apple OS/X 10.7 or later detected: Using CoreVideo timestamping instead of precise vbl-irq timestamping.
+PTB-INFO: Implausible measured vblank endline 1050 indicates that the beamposition query workaround should be used for your GPU.
+PTB-INFO: Enabling the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: NVIDIA GeForce GT 330M OpenGL Engine :: 2.1 NVIDIA-8.0.51
+PTB-INFO: Renderer has 512 MB of VRAM and a maximum 477 MB of texture memory.
+PTB-INFO: VBL startline = 1050 , VBL Endline = 1050
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.699094 ms [59.883488 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.698264 ms [59.886466 Hz]. (50 valid samples taken, stddev=0.068301 ms.)
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Support for fast OffscreenWindows enabled.
+
+ans = 
+
+          Line_Number: {'1'}
+             Stimulus: {'get_signal'}
+        Response_Code: {'NaN'}
+        Stimulus_Type: {'xfn'}
+    Stimulus_Duration: 0.5000
+                 wptr: 10
+
+
+ans = 
+
+       distnTarget: 'normal'
+                 h: 10
+                 m: -3
+         distnFoil: 'normal'
+                 a: -7
+                 j: 10
+                D0: 0
+          baserate: 0.5000
+          muTarget: 7
+         varTarget: 1.5000
+            muFoil: 5
+           varFoil: 1.5000
+    x_range_target: [1 2 3 4 5 6 7 8 9 10 11]
+      x_range_foil: [1 2 3 4 5 6 7 8 9 10 11]
+
+
+ Stimuli duration tunings:
+Elapsed time is 0.511165 seconds.
+Elapsed time is 0.515142 seconds.
+Elapsed time is 0.062308 seconds.
+Elapsed time is 0.516875 seconds.
+Elapsed time is 0.064464 seconds.
+Elapsed time is 0.518628 seconds.
+Elapsed time is 0.063498 seconds.
+Elapsed time is 0.514596 seconds.
+Elapsed time is 0.065702 seconds.
+Elapsed time is 0.513399 seconds.
+Elapsed time is 0.066580 seconds.
+Elapsed time is 0.513692 seconds.
+Elapsed time is 0.067671 seconds.
+Elapsed time is 0.513893 seconds.
+Elapsed time is 0.068006 seconds.
+Elapsed time is 0.512225 seconds.
+Elapsed time is 0.052305 seconds.
+Elapsed time is 0.510996 seconds.
+Elapsed time is 0.054210 seconds.
+Elapsed time is 0.510244 seconds.
+Elapsed time is 0.055938 seconds.
+Elapsed time is 0.507521 seconds.
+Elapsed time is 0.056884 seconds.
+Elapsed time is 0.506967 seconds.
+Elapsed time is 0.056972 seconds.
+Elapsed time is 0.506879 seconds.
+Elapsed time is 0.057167 seconds.
+Elapsed time is 0.505782 seconds.
+Elapsed time is 0.059731 seconds.
+Elapsed time is 0.504335 seconds.
+Elapsed time is 0.060436 seconds.
+Elapsed time is 0.502836 seconds.
+Elapsed time is 0.061867 seconds.
+Elapsed time is 0.501915 seconds.
+Elapsed time is 0.061482 seconds.
+Elapsed time is 0.502824 seconds.
+Elapsed time is 0.063379 seconds.
+Elapsed time is 0.499850 seconds.
+Elapsed time is 0.064934 seconds.
+Elapsed time is 0.500246 seconds.
+Elapsed time is 0.064108 seconds.
+Elapsed time is 0.500285 seconds.
+Elapsed time is 0.065578 seconds.
+Elapsed time is 0.497457 seconds.
+Elapsed time is 0.066450 seconds.
+Elapsed time is 0.495914 seconds.
+Elapsed time is 0.067524 seconds.
+Elapsed time is 0.495416 seconds.
+Elapsed time is 0.051967 seconds.
+
+Tuning_Results_in_secs = 
+
+    [0.5000]    '= target dur'   
+    [0.5000]    '= round target' 
+    [0.5177]    '= initial dur'  
+    [0.5009]    '= final dur'    
+    [0.4800]    '= requested dur'
+
+Initial difference = 17.6695 msec.
+Final difference = 0.882 msec.
+
+ans = 
+
+       distnTarget: 'normal'
+                 h: 10
+                 m: -3
+         distnFoil: 'normal'
+                 a: -7
+                 j: 10
+                D0: 0
+          baserate: 0.5000
+          muTarget: 7
+         varTarget: 1.5000
+            muFoil: 5
+           varFoil: 1.5000
+    x_range_target: [1 2 3 4 5 6 7 8 9 10 11]
+      x_range_foil: [1 2 3 4 5 6 7 8 9 10 11]
+
+{Warning: FOR loop index is too large. Truncating to 2147483647.} 
+> In <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/satb_stimdur_test.m',231,1)">satb_stimdur_test>block_trials at 231</a>
+  In <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/satb_stimdur_test.m',196,1)">satb_stimdur_test>signalsTask at 196</a>
+  In <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/satb_stimdur_test.m',145,1)">satb_stimdur_test at 145</a>
+Elapsed time is 0.488412 seconds.
+Elapsed time is 0.491146 seconds.
+Elapsed time is 0.495990 seconds.
+Elapsed time is 0.496287 seconds.
+Elapsed time is 0.496685 seconds.
+Elapsed time is 0.495655 seconds.
+Elapsed time is 0.496980 seconds.
+Elapsed time is 0.495880 seconds.
+Elapsed time is 0.496385 seconds.
+Elapsed time is 0.495864 seconds.
+Elapsed time is 0.495996 seconds.
+Elapsed time is 0.496848 seconds.
+Elapsed time is 0.496055 seconds.
+Elapsed time is 0.497059 seconds.
+Elapsed time is 0.497223 seconds.
+Elapsed time is 0.496246 seconds.
+{??? Operation terminated by user during ==> <a href="matlab: opentoline('/Applications/Psychtoolbox/PsychBasic/KbCheck.m',223,0)">KbCheck at 223</a>
+
+In ==> <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/runexpt/show_stim.m',56,0)">show_stim at 56</a>
+    [KeyIsDown, checktime, KeyCode]=KbCheck; %check keyboard status
+
+In ==> <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/satb_stimdur_test.m',254,0)">satb_stimdur_test>block_trials at 254</a>
+[response startRT endRT]=show_stim(stiminfo(mytrial)); %show main stim
+
+In ==> <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/satb_stimdur_test.m',196,0)">satb_stimdur_test>signalsTask at 196</a>
+block_trials('trials_list.txt','keys_yesno_list.txt',reps,trialinfo) %will repeat trial list reps
+#times.
+
+In ==> <a href="matlab: opentoline('/Users/spencer/Coding/Matlabber/my_m-files/SAlab/satoolbox/stimdur_test/satb_stimdur_test.m',145,0)">satb_stimdur_test at 145</a>
+    signalsTask(conditions.scenario,tReps,conditions.stimset,trialinfo)
+} 
+   
+cleanup
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 26 times out of a total of 86 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+

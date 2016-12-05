@@ -1,0 +1,33 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf230
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 How to notes\
+\
+LIST FILES\
+- updated format for satb3\
+- sometimes first row needs to be numeric - have a NaN in feedback lists\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 TRIAL LIST
+\b0 \
+Info from the trial definition list file \'97 specifies order of trial types in main experimental sequence (eg, signal-drawn trial, hard-coded, confidence rating, etc). block_trials passes this to show_stim.m (as stiminfo),  which uses it to control stimulus size, position, duration.\
+\
+- if you are using tune_stimdur.m then you don't need to put stim durations here for primary/target trials (but you would for say confidence trials, unless those get defined by their own list).\
+\
+
+\b STIMULUS_LIST
+\b0 \
+Info from the stimulus definition list file. Sets some defining characteristics of main target stimuli: name, desired stimulus duration. This is used by tune_stimdur.m to determine what stimulus duration to request in order to achieve the desired duration. It is also used for behavioral scoring and write_data uses it for data logging. At initialization of expt, it's read into memory, then at each trial, fetch_signal will over-write parts for behavioral scoring and logging.\
+\
+\
+%% stimdur comes from trial_info (which, for main expt'l trials, is usually the trial_list file, not the stimulus_list file).\
+% If the expt uses tune_stimdur, then the tuned duration should be put into trial_info prior to calling show_stim. \
+% Overwriting of a list's stimdur with a tunedStimDur should be done in main experimental code, like in or block_trials.\
+\
+%% Trigger duration must be less than stimulus duration because trigger shuts down ML with WaitSecs.\
+% So the trigger duration is effectively added to time the stimulus is on-screen.\
+}

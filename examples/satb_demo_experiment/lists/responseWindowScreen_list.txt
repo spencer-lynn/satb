@@ -1,0 +1,1 @@
+Line_Number	Stimulus	Response_Code	Stimulus_Type	Font_Name	x	y	Stimulus_Duration	Size	Red	Green	Blue1	Is this person angry?	0	text	Arial	center	center	Inf	24	255	255	255

@@ -1,0 +1,61 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red34\green139\blue34;}
+\margl1440\margr1440\vieww14100\viewh16740\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 10/18/12 How to implement confidence ratings\
+- did this for otd.m\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 trials_confidence_list
+\b0  = hard-coded listing of trials, ordered intermingling of signal-drawn with hard-coded stimIDs. This is a list of xfns: get_signal to load a signal-drawn trial as usual, and EXPT_confidence_stim to load the hard coded stim.\
+\
+
+\b stimuli_confidence_list
+\b0  = an list of stimulus file names, in order in which they should be drawn. Line_Number column indexes the trial's Line_Number in trials_confidence_list that will show a given stim.\
+\
+
+\b EXPT_confidence_stim.m
+\b0  = experiment-specific xfn, does the lookup between trials_confidence_list and stimuli_confidence_list to determine what stim to show, writes that stimulus info into stiminfo variable (including noobjtype's value (='0') into Response_Code, calls loadstim, and passes control back to show_stim to do the flip and get the yes/no judgement.\
+\
+
+\b parameters_list
+\b0  =  contains Dplus and Dminus lines, which are payoff codes (ie, like h,a) specifying the payoff accrued for responding to the stim (with payoff value=0). \
+- matching noobjtype to keypress to Dplus/D+ outcomes handled by regular SAtb procedures.\
+\
+
+\b signalsTask_confidence
+\b0  = a subfn in EXPT.m that takes over stim presentation for the block of trials showing intermingled signal/conf trials:\
+\pard\pardeftab720
+
+\f1 \cf2 % 1. Send a single face-stim trial to block_trials\cf0 \
+\cf2 % - trials are read in order from trials_confidence_list\cf0 \
+\cf2 % - they are assigned by xfn's (either otd_confidenc_stim or get_signal)\cf0 \
+\cf2 % 2. Send a rating trial to block_ratings after each face-stim trial\cf0 \
+\cf2 % - done here, after call to block_trials\cf0 \
+\cf2 % 3. Repeat 1-2 for length of trials_confidence_list file.\cf0 \
+\cf2 % Order of face-stim IDs is given in stimuli_confidence_list, which is used to reference into the normal stimuli_list for layout details.\cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0 \cf0 Display of feedback is controlled by whatever is specified in feedback_list for the D+/D- Response_Codes.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 Obtaining confidence ratings on signal-drawn trials.
+\b0 \
+- In SAP2,SIG3 I used non-signal trials, so there was no right answer.\
+- For Kevin's rbal.m, we used uniform distns, so how to get balanced number of ratings for each stim less of an issue\'97 will mostly just work.\
+= A new soln could be to hard-code the signal value (so we get a rating for each signal value) and hard-code the target/foil encounter rate according to the base rate. Haven't tried this.\
+\
+\
+To process confidence ratings:\
+- EXTRACTING see the expt_confidence_rating.m scripts (used in sap2, sig3, inside otd_process). Look in satb/dev for recent version.\
+\
+- EST SOURCE: posterior odds to infer source of signal. See bayes_posterior, which may be called by expt_confidence_rating.\
+\
+- ROC CURVE: see roc_from_confidence, (see also roc_from_gradients for an alternative method, not using confidence ratings, see proc_sap1_roc for example use)\
+\
+- TYPE 2: see do_type2_sdt, but this may be incorporated in expt_confidence_rating script.}
